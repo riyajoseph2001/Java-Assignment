@@ -1,15 +1,13 @@
-package VariablesAndDatatypes;
-
-import java.util.Scanner;
+package ControlStructures;
 
 public class Question7 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter temperature in Fahrenheit :");
-		float fahrenheit = scan.nextFloat();
-		float celsius = ((fahrenheit-32)*5)/9  ;
-		System.out.println("Temperature in Celsius = "+celsius+" C");
+		Box box1 = new Box();
+		Box box2 = new Box();
+		
+		System.out.println("Volumn of box1 : "+box1.volumn(15,12,8));
+		System.out.println("Volumn of box2 : "+box2.volumn(20,16,9));
 		
 
 	}

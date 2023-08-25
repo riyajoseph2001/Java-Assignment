@@ -1,24 +1,12 @@
-package VariablesAndDatatypes;
-
-import java.util.Scanner;
+package ControlStructures;
 
 public class Question8 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter first number :");
-		int i= scan.nextInt();
-		System.out.println("Enter second number :");
-		int j= scan.nextInt();
-		System.out.println("Before Swapping : "+i+" "+j);
-		
-		int temp = i;
-		i = j;
-		j = temp;
-		System.out.println("After Swapping : "+i+" "+j);
-		
-		
-				
+		Box box1 = new Box(20,17,12);
+		float volumn = box1.width*box1.height*box1.depth;
+		System.out.println("Volumn of box :"+volumn);
+
 	}
 
 }
